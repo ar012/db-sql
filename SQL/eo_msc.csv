@@ -1,0 +1,26 @@
+
+var mscData = [
+{"mscCode":"CM29","mscName":"CM29","mscLongitude":90.41629030,"mscLatitude":23.78232540,"mscAltitudeFt":58.60},
+{"mscCode":"CM37","mscName":"CM37","mscLongitude":90.41629030,"mscLatitude":23.78232540,"mscAltitudeFt":58.60},
+{"mscCode":"CM39","mscName":"CM39","mscLongitude":90.41629030,"mscLatitude":23.78232540,"mscAltitudeFt":58.60},
+{"mscCode":"DM30","mscName":"DM30","mscLongitude":90.41629030,"mscLatitude":23.78232540,"mscAltitudeFt":58.60},
+{"mscCode":"DM34","mscName":"DM34","mscLongitude":91.93247270,"mscLatitude":24.37774160,"mscAltitudeFt":31.53},
+{"mscCode":"DM36","mscName":"DM36","mscLongitude":91.93247270,"mscLatitude":24.37774160,"mscAltitudeFt":31.53},
+{"mscCode":"KM35","mscName":"KM35","mscLongitude":91.81828400,"mscLatitude":22.39255090,"mscAltitudeFt":55.77},
+{"mscCode":"RM31","mscName":"RM31","mscLongitude":91.81828400,"mscLatitude":22.39255090,"mscAltitudeFt":55.77},
+{"mscCode":"SM38","mscName":"SM38","mscLongitude":91.81828400,"mscLatitude":22.39255090,"mscAltitudeFt":55.77},
+{"mscCode":"CM26","mscName":"CM26","mscLongitude":91.81828400,"mscLatitude":22.39255090,"mscAltitudeFt":55.77},
+{"mscCode":"CM22","mscName":"CM22","mscLongitude":88.91987850,"mscLatitude":22.83938450,"mscAltitudeFt":29.10},
+{"mscCode":"CM14","mscName":"CM14","mscLongitude":88.91987850,"mscLatitude":22.83938450,"mscAltitudeFt":29.10},
+{"mscCode":"CM09","mscName":"CM09","mscLongitude":88.91987850,"mscLatitude":22.83938450,"mscAltitudeFt":29.10},
+{"mscCode":"CG11","mscName":"CG11","mscLongitude":90.41629030,"mscLatitude":23.78232540,"mscAltitudeFt":58.60},
+{"mscCode":"CG12","mscName":"CG12","mscLongitude":90.41629030,"mscLatitude":23.78232540,"mscAltitudeFt":58.60},
+{"mscCode":"CGDR01","mscName":"CGDR01","mscLongitude":90.41629030,"mscLatitude":23.78232540,"mscAltitudeFt":58.60},
+{"mscCode":"DG06","mscName":"DG06","mscLongitude":91.93247270,"mscLatitude":24.37774160,"mscAltitudeFt":31.53},
+{"mscCode":"DG08","mscName":"DG08","mscLongitude":91.93247270,"mscLatitude":24.37774160,"mscAltitudeFt":31.53},
+{"mscCode":"DG10","mscName":"DG10","mscLongitude":91.81828400,"mscLatitude":22.39255090,"mscAltitudeFt":55.77},
+{"mscCode":"DRG01","mscName":"DRG01","mscLongitude":91.81828400,"mscLatitude":22.39255090,"mscAltitudeFt":55.77},
+{"mscCode":"DRG02","mscName":"DRG02","mscLongitude":91.81828400,"mscLatitude":22.39255090,"mscAltitudeFt":55.77},
+{"mscCode":"GMSC02","mscName":"GMSC02","mscLongitude":88.91987850,"mscLatitude":22.83938450,"mscAltitudeFt":29.10},
+{"mscCode":"GMSC03","mscName":"GMSC03","mscLongitude":88.91987850,"mscLatitude":22.83938450,"mscAltitudeFt":29.10}
+];
