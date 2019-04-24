@@ -1,0 +1,18 @@
+-- Table: public.nms_network_appliance_types
+
+ DROP TABLE public.nms_network_appliance_types;
+
+CREATE TABLE public.nms_network_appliance_types
+(
+    id uuid NOT NULL DEFAULT uuid_generate_v4(),    
+        	
+    device_type_code character varying default '01',
+    device_type_name character varying default 'Network Router',
+    	    
+    CONSTRAINT pk_nms_network_appliance_types PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+

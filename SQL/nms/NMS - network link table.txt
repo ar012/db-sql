@@ -1,0 +1,75 @@
+-- Table: public.nms_network_links
+
+-- DROP TABLE public.nms_network_links;
+
+CREATE TABLE public.nms_network_links
+(
+    id uuid NOT NULL DEFAULT uuid_generate_v4(),
+    client_id uuid,
+    client_code character varying,
+    client_name character varying,
+    company_id uuid,
+    company_code character varying,
+    company_name character varying,
+    
+    link_code character varying,
+    link_name character varying,
+    link_type character varying default 'Fiber',
+    
+	site1_name character varying,
+	site1_latitude double precision,
+    site1_longitude double precision,
+    	
+	site2_name character varying,
+	site2_latitude double precision,
+    site2_longitude double precision,
+    	
+	link_length_km double precision default 0,
+    
+	link_condition character varying default 'Functional',
+	work_start_date date,
+    onair_date date,
+	life_length_yrs float default 3,
+	eol date,
+    link_capacity_mbps double precision default 0,    
+    
+	site1_snmp_version character varying default '3',
+	site1_snmp_ip character varying,
+	site1_snmp_udp_port integer default 161,
+	site1_snmp_community_string character varying,  // works as password
+	site1_snmp_security_level character varying default 'noAuthNoPriv',
+	site1_snmp_auth character varying default 'SHA',
+	site1_snmp_encryption character varying default 'DES',
+	site1_snmp_username character varying,
+	site1_snmp_group character varying,	
+	site1_snmp_password character varying,
+	site1_snmp_connect_style character varying default 'Community', 
+	
+	site2_snmp_version character varying default '3',
+	site2_snmp_ip character varying,
+	site2_snmp_udp_port integer default 161,
+	site2_snmp_community_string character varying,  // works as password
+	site2_snmp_security_level character varying default 'noAuthNoPriv',
+	site2_snmp_auth character varying default 'SHA',
+	site2_snmp_encryption character varying default 'DES',
+	site2_snmp_username character varying,
+	site2_snmp_group character varying,	
+	site2_snmp_password character varying,
+	site2_snmp_connect_style character varying default 'Community', 
+	
+	link_provider character varying default 'ADN', 
+	monthly_rent double precision default 0,
+	contact_person character varying,
+	contact_numbers character varying,
+	
+    site1_address character varying,    
+    site2_address character varying, 		
+    
+    CONSTRAINT pk_nms_network_links PRIMARY KEY (id)
+    
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+

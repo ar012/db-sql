@@ -1,0 +1,55 @@
+-- Table: public.nms_network_appliances
+
+ DROP TABLE public.nms_network_appliances;
+
+CREATE TABLE public.nms_network_appliances
+(
+    id uuid NOT NULL DEFAULT uuid_generate_v4(),
+    client_id uuid,
+    client_code character varying,
+    client_name character varying,
+    company_id uuid,
+    company_code character varying,
+    company_name character varying,
+    	
+    device_code character varying,
+    device_name character varying,
+	device_ip character varying,
+	device_mac character varying,
+	
+	device_type character varying default 'Router', //Firewall, Switch, UPS, Printer, etc.
+	device_model character varying default 'Cisco 3410',
+			
+	snmp_version character varying default '3',
+	snmp_udp_port integer default 161,
+	snmp_community_string character varying,  // works as password
+	snmp_security_level character varying default 'noAuthNoPriv',
+	snmp_auth character varying default 'SHA',
+	snmp_encryption character varying default 'DES',
+	snmp_username character varying,
+	snmp_group character varying,	
+	snmp_password character varying,
+	snmp_connect_style character varying default 'Community', 
+    
+	latitude double precision default 0,
+    longitude double precision default 0,
+	loc_id uuid,
+    loc_code character varying,
+    loc_name character varying,
+	loc_type character varying,
+    
+	upstream_device_id uuid,
+	upstream_device_code character varying,
+	upstream_device_ip character varying,
+	upstream_device_type character varying default 'Router',
+	upstream_link_mbps float default 0,
+	upstream_link_type character varying default 'Fiber',
+	upstream_link_provider character varying default 'ADN',
+	
+    CONSTRAINT pk_nms_network_appliances PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
